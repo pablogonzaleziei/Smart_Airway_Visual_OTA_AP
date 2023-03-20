@@ -3,9 +3,21 @@
 # Smart_Airway_Visual_OTA_AP
 ## Features
 - Access Point: "SMARTSIM" no password. Direct connection with ESP32 (No internet access)
-- SSID and Password request for internet access (same network used on the device)
+- SSID and Password request for internet access (same network used on the device).
 - WIFI credentials storing in flash
-- Send local IP and softAPIP via I2C
+- OTA update (needs internet access)
+- Send local IP and softAPIP via I2C and connection confirmation
+
+## Instructions
+- Connect device to the network called "SMARTSIM" if you want to use an Access Point (The device won't have internet connection)
+- Access the video stream: xxx.xxx.xxx.xxx:82/stream
+- Access the OTA update web server: xxx.xxx.xxx.xxx:84/updateIndex (needs internet connection)
+- Receive credentials: I2C address is 0x55, the format has to be `SSID$PASSWORD$NULL` 
+- Send IP: I2C address is 0x55, will be able to send a localIP and a SoftAPIP
+- Reset the credentials: set pin 2 (WiFi_rst) to HIGH, direct wire or I2C (recommended)
+- I2C connection:
+    `#define I2C_SDA 14                 //Changing original SDA pin from 21 to 14
+    #define I2C_SCL 15                 //Changing original SCL pin from 22 to 15`
 
 ## Add your files
 
