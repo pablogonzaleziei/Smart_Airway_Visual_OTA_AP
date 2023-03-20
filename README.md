@@ -16,8 +16,8 @@
 - Send IP: I2C address is 0x55, will be able to send a localIP and a SoftAPIP
 - Reset the credentials: set pin 2 (WiFi_rst) to HIGH, direct wire or I2C (recommended)
 - I2C connection:
-    `#define I2C_SDA 14                 //Changing original SDA pin from 21 to 14
-    #define I2C_SCL 15                 //Changing original SCL pin from 22 to 15`
+    - `#define I2C_SDA 14 //Changing original SDA pin from 21 to 14`
+    - `#define I2C_SCL 15 //Changing original SCL pin from 22 to 15`
 
 ## Add your files
 
