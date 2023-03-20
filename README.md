@@ -1,6 +1,10 @@
 # SMART_AIRWAY_VISUAL
 
 # Smart_Airway_Visual_OTA_AP
+
+Option 1: use Aduino IDE to upload
+Option 2: use VScode with Platformio in espressif32 platform and arduino framework
+
 ## Features
 - Access Point: "SMARTSIM" no password. Direct connection with ESP32 (No internet access)
 - SSID and Password request for internet access (same network used on the device).
@@ -9,6 +13,7 @@
 - Send local IP and softAPIP via I2C and connection confirmation
 
 ## Instructions
+Board: AI Thinker ESP32-CAM or ESP32-wrover Module. Partition scheme: Minimal SPIFFS (1.9 MB APP with OTA)
 - Connect device to the network called "SMARTSIM" if you want to use an Access Point (The device won't have internet connection)
 - Access the video stream: xxx.xxx.xxx.xxx:82/stream
 - Access the OTA update web server: xxx.xxx.xxx.xxx:84/updateIndex (needs internet connection)
