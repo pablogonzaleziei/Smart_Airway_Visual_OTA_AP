@@ -1,6 +1,6 @@
 # SMART_AIRWAY_VISUAL
 
-# Smart_Airway_Visual_OTA_v2_AP
+# Smart_Airway_Visual_OTA_AP
 ## Features
 - Access Point: "SMARTSIM" no password. Direct connection with ESP32 (No internet access)
 - SSID and Password request for internet access (same network used on the device)
