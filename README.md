@@ -31,7 +31,10 @@ Board: AI Thinker ESP32-CAM or ESP32-wrover Module. Partition scheme: Minimal SP
 
 ```
 cd existing_repo
-git remote add origin https://gitlab.com/pablogonzaleziei/smart_airway_visual.git
-git branch -M main
-git push -uf origin main
+    git init
+    git remote add origin url to an existing repository
+    git add .
+    git branch -M main
+    git commit -m "Innitial commit"
+    git push --set-upstream origin main
 ```

@@ -403,7 +403,7 @@ void sendIP() {
   //if (WiFi.status() == WL_CONNECTED) {
   IPAddress localIP = WiFi.localIP();
   wifi_connected = 1;
-  uint8_t Buffer[5] = { localIP[0], localIP[1], localIP[2], localIP[3], wifi_connected };
+  uint8_t Buffer[5] = { localIP[0], localIP[1], localIP[2], localIP[3], wifi_connected};
   //Serial.println(wifi_connected);
   Wire.write(Buffer, 5);  //data bytes are queued in local buffer
   delay(500);
